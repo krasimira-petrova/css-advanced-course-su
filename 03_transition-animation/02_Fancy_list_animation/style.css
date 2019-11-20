@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px/1.5 Verdana, serif;
+}
+
+nav {
+    position: relative;
+    padding: 2em;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: block;
+    width: 20%;
+    list-style: none outside;
+    padding: 0 0.5em;
+    transform: translateX(-5em);
+    opacity: 0;
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+nav ul li:nth-child(1) {
+    transition-delay: 0.0s;
+}
+
+nav ul li:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+nav ul li:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+nav ul li:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+nav ul li:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+nav ul li:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+nav ul li:nth-child(7) {
+    transition-delay: 0.6s;
+}
+
+.loaded nav ul li {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5em 1em;
+}
