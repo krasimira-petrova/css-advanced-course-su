@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: 14px/1.5 Helvetica, Sans-Serif;
+  background: #e6e6e6;
+}
+
+body, form, input, button, select, option {
+  font: inherit;
+}
+
+body {
+  padding: 5em 5em;
+  text-align: center;
+}
+
+.container {
+  padding: 1em;
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  height: 4em;
+  line-height: 2em;
+  font-weight: 550;
+  margin: 1em 1em;
+  padding: 1em 1em;
+  background: #fff;
+  outline: 5px solid darkblue;
+}
+
+@keyframes borderline {
+  from {
+    outline: 5px solid darkblue;
+  }
+  to {
+    outline: 7px solid darkblue;
+  }
+}
+
+a:hover {
+  animation: borderline 1s linear forwards;
+}
