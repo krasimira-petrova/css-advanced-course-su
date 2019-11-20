@@ -17,12 +17,15 @@ body {
   margin: 0 auto;
   padding: 0 auto;
   color: #fff;
+  text-align: center;
 }
 
 .box {
+  display: inline-block;
   margin: 5em 5em;
   padding: 5em 5em;
-  background: #ff7b29;
+  border-radius: 50%;
+  background: #ff3333;
   cursor: pointer;
   height: 95px;
   width: 95px;
@@ -32,6 +35,6 @@ body {
 }
 
 .box:hover {
-  background: #ff3333;
-  border-radius: 50%;
+  background: #ff7b29;
+  border-radius: 0%;
 }
