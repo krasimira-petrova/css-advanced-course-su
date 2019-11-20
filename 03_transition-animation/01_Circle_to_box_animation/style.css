@@ -29,12 +29,23 @@ body {
   cursor: pointer;
   height: 95px;
   width: 95px;
-  transition-property: background, border-radius;
-  transition-duration: 1s;
-  transition-timing-function: linear;
+}
+
+@keyframes square {
+  0% {
+    border-radius: 50%;
+    background: #ff3333;
+  }
+  50% {
+    background: #ff7b29;
+    border-radius: 0%;
+  }
+  100% {
+    border-radius: 50%;
+    background: #ff3333;
+  }
 }
 
 .box:hover {
-  background: #ff7b29;
-  border-radius: 0%;
+  animation: square 5s linear infinite;
 }
