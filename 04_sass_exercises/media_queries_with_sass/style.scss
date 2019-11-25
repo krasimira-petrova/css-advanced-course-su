@@ -1,0 +1,54 @@
+$parent: container;
+$child: box;
+
+.#{$parent} {
+  .#{$child} {
+    height: 2em;
+    width: 2em;
+    color: red;
+
+    &:hover {
+      color: green;
+    }
+  }
+}
+
+$breakpoints: (
+  small: 480px,
+  medium: 800px,
+  large: 1024px
+);
+
+@mixin mq($mq-breakpoint) {
+  @if map-has-key($breakpoints, $mq-breakpoint) {
+    $mq-breakpoint: map-get($breakpoints, $mq-breakpoint);
+  }
+
+  @media screen and (min-width: #{$mq-breakpoint}) {
+    @content;
+  }
+}
+
+@include mq(small) {
+  .#{$parent} {
+    .#{$child} {
+      color: green;
+    }
+  }
+}
+
+@include mq(medium) {
+  .#{$parent} {
+    .#{$child} {
+      color: blue;
+    }
+  }
+}
+
+@include mq(large) {
+  .#{$parent} {
+    .#{$child} {
+      color: yellow;
+    }
+  }
+}
