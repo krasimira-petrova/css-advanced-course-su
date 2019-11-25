@@ -1,0 +1,10 @@
+$parent: container;
+$child: box;
+
+.#{$parent} {
+  .#{$child} {
+    height: 2em;
+    width: 2em;
+    color: red;
+  }
+}
