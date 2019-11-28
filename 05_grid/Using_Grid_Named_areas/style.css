@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Verdana, sans-serif;
+}
+
+body, form, input, button, select, option {
+    font: inherit;
+}
+
+body {
+    padding-top: 6em;
+    max-width: 70em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "header header"
+                         "main sidebar" 
+                         "footer footer";
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+}
+
+div {
+    background: black;
+    height: 3em;
+    color: white;
+    padding: 0.7em;
+}
+
+.item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: main;
+}
+
+.item-c {
+    grid-area: sidebar;
+}
+
+.item-d {
+    grid-area: footer;
+}
