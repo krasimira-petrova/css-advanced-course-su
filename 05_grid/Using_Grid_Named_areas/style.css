@@ -19,9 +19,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: "header header"
-                         "main sidebar" 
-                         "footer footer";
+    grid-template-areas: "header header" "main sidebar" "footer footer";
     grid-row-gap: 1em;
     grid-column-gap: 1em;
 }
