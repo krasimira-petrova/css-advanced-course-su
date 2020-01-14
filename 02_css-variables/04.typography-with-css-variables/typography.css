@@ -1,0 +1,38 @@
+html {
+    font: 12px/1.5 Verdana, sans-serif;
+}
+
+body, form, input, textarea, option, select, button {
+    font: inherit;
+}
+
+p, ul, ol {
+    padding-bottom: 1.5em;
+}
+
+ul, ol {
+    padding-left: 2.5em;
+}
+
+body {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+    html {
+        font-size: var(--font-text-article-small, 14px);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    html {
+        font-size: var(--font-text-article-medium, 16px);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: var(--font-text-article-large, 18px);
+    }
+}
