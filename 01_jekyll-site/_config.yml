@@ -1,0 +1,25 @@
+
+title: My first Jekyll site
+email: krasimira.todorova.petrova@gmail.com
+description: Hello world!
+baseurl: "/su-css-adv-jekyll-site"
+url: ""
+twitter_username: krasi.t.p
+github_username:  krasi.t.p
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
